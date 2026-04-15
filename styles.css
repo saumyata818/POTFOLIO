@@ -319,6 +319,115 @@ body {
   border-top: 1px solid rgba(125, 217, 204, 0.12);
 }
 
+@media (max-width: 780px) {
+  body {
+    padding: 16px;
+  }
+
+  .terminal-shell {
+    width: 100%;
+    border-radius: 22px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+  }
+
+  .window-top {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    padding: 16px 18px;
+  }
+
+  .window-title,
+  .window-action {
+    flex: 1 1 100%;
+  }
+
+  .window-action {
+    font-size: 0.92rem;
+  }
+
+  .terminal-body {
+    padding: 20px 18px 18px;
+    gap: 18px;
+  }
+
+  .status-panel,
+  .profile-banner,
+  .command-panel {
+    border-radius: 20px;
+  }
+
+  .profile-banner {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .profile-banner-left,
+  .profile-banner-right,
+  .command-panel .card-content {
+    padding: 22px 20px;
+  }
+
+  .profile-banner-left {
+    padding-top: 22px;
+  }
+
+  .profile-hero {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    justify-self: center;
+  }
+
+  .profile-title {
+    font-size: 1.7rem;
+  }
+
+  .profile-subtitle {
+    font-size: 0.98rem;
+  }
+
+  .profile-banner p,
+  .command-panel p {
+    max-width: 100%;
+  }
+
+  .commands-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .command-item {
+    padding: 14px 16px;
+  }
+
+  .command-item span {
+    font-size: 0.95rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 2px;
+  }
+
+  .prompt-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  #commandInput {
+    width: 100%;
+  }
+}
+
 .prompt-bar span {
   color: var(--accent);
 }
